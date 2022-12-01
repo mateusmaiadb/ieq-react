@@ -1,7 +1,18 @@
-export default function Home(){
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+
+
+
+export default function Home() {
     return (
-        <header>
-            <h1>Seja bem vindo!</h1>
-        </header>
+        <div className='home'>
+            <Link to="/sobre">
+                <Button variant="contained">Sobre</Button>
+            </Link>
+            <Link to="/eventos">
+                <Button variant="contained">Eventos</Button>
+            </Link>
+        </div>
     )
 }
+
